@@ -5,17 +5,15 @@
 
 
 typedef struct{
-    float number[N];
+    float population[N];
+    float square[N];
+    char city[N];
 }City;
 
-typedef struct {
-    char city[N];
-}Name_City;
-
-void calculate(City x, City y, Name_City z){
+void calculate(City x){
     float pol[N];
     for (int i = 0; i < N; ++i) {
-        pol[i] = x.number[i]/y.number[i];
+        pol[i] = x.population[i]/x.square[i];
     }
     float min=pol[0];
     int count=0;
@@ -25,14 +23,14 @@ void calculate(City x, City y, Name_City z){
             count = i;
         }
     }
-    printf("The %c has a minimum population density\n", z.city[count]);
+    printf("The %c has a minimum population density\n", x.city[count]);
     printf("Population density: %lf million / thousand km^2", min);
 }
 
 int main(){
-    City population={120, 56, 54, 98, 74, 23, 99, 45, 25, 61};
-    City square={1204, 456, 845, 653, 456, 321, 987, 1523, 897, 651};
-    Name_City name={'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'};
-    calculate(population, square, name);
+    City info={120, 56, 54, 98, 74, 23, 99, 45, 25, 61,
+                     1204, 456, 845, 653, 456, 321, 987, 1523, 897, 651,
+                     'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'};
+    calculate(info);
 
 }
