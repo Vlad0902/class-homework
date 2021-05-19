@@ -1,0 +1,11 @@
+links 1 line:https://ota/gov/ua/ word: good
+
+links 2 line:
+links 3 line:https://github.com/mecchmatProjects/CppCourse/blob/master/2021_projects_spring.pdf/ word: project
+
+links 4 line:https://www.blablacar.com.ua/ word: route
+
+links 5 line:
+links 6 line:https://sinoptik.ua/ word: weather
+https://www.youtube.com/ word: watch
+
