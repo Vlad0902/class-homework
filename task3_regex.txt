@@ -1,0 +1,5 @@
+
+we can put (45.0000) milion and thousand (552.3656)
+but if pay (2.5450) thousand every month and (2.6540) every years
+(179000000.0000) result
+
